@@ -4,7 +4,7 @@ var app = express();
 
 // Configuration
 app.set('port', (process.env.PORT || 8500))
-app.get('/', express.static(__dirname + '/app'));
+app.use(express.static(__dirname + '/app'));
 
 
 // Routes
